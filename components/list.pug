@@ -1,0 +1,10 @@
+.list-wrap#list-wrap
+    .list-title
+        .list-title-global #{title}
+        .list-title-subTitle #{subtitle}
+    .list-data
+        .list-data
+            -var array=[1,2,3,4]
+            ul
+             each val,idx in array
+                li #{val} is at #{idx}
