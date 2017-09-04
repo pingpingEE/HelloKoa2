@@ -35,5 +35,6 @@ app.use(async (ctx, next) => {
 // routes
 app.use(index.routes(), index.allowedMethods())
 app.use(users.routes(), users.allowedMethods())
-
+// 修改端口
+app.listen(3010);
 module.exports = app
